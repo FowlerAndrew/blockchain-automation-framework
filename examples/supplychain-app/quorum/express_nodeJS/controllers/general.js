@@ -8,8 +8,12 @@ var bodyParser = require('body-parser');
 
 router.use(bodyParser.json()); // for parsing application/json
 
+const {productContract, fromAddress, organization, organizationUnit} = require('../web3services');
+
 router.get('/node-organization', function (req, res) {
 
+
+    res.send({ organization : organization});
   // TODO: Implement get self organization
   // getSelf()
   // .then( response => {
@@ -23,6 +27,7 @@ router.get('/node-organization', function (req, res) {
 
 router.get('/node-organizationUnit', function (req, res) {
 
+  res.send({organizationuUnit: organizationUnit});
   // TODO: Implement get organization unit
   // getRole()
   // .then( response => {

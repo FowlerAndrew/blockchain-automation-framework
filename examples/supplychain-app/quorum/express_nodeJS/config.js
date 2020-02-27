@@ -5,5 +5,8 @@ module.exports = {
   quorumServer : process.env.QUORUM_SERVER,
   ganacheServer : process.env.GANACHE_SERVER,
   nodeIdentity : process.env.NODE_IDENTITY,
-  productContractAddress : process.env.PRODUCT_CONTRACT_ADDRESS
+  productContractAddress : process.env.PRODUCT_CONTRACT_ADDRESS,
+  organization : process.env.NODE_ORGANIZATION,
+  organizationUnit: process.env.NODE_ORGANIZATION_UNIT
+  
 };

@@ -1,6 +1,6 @@
 var Web3 = require("web3");
 var {productABI} = require("./ABI/productABI");
-var {productContractAddress,quorumServer, ganacheServer, nodeIdentity} = require("./config");
+var {productContractAddress,quorumServer, ganacheServer, nodeIdentity, organization, organizationUnit} = require("./config");
 
 // Smart contract address
 const fromAddress = nodeIdentity;
@@ -13,5 +13,7 @@ let productContract = new web3.eth.Contract(productABI, productContractAddress);
 
 module.exports = {
     productContract,
-    fromAddress
+    fromAddress,
+    organization,
+    organizationUnit
 }
